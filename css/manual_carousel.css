@@ -1,0 +1,107 @@
+@charset "utf-8";
+/* 이미지 슬라이드 영역 */
+.slideshow_container {
+    max-width: 1280px;
+    margin: 0 auto;
+    /* 위치 기준 값 */
+    position: relative;
+}
+
+.slideshow_container img {
+    width: 100%;
+}
+
+.slideshow_container .slide .txt {
+    width: 100%;
+    color: #c0ca33;
+    text-shadow: 0 0 2px #fff;
+    font-size: 1.6rem;
+    padding: 16px 0;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: -2px;
+    font-weight: 600;
+    /* 포지션 */
+    position: absolute;
+    top: 0;
+}
+.slideshow_container .slide .number_text {
+    width: 100%;
+    color: #524c00;
+    font-size: 0.875rem;
+    font-weight: 600;
+    padding: 30px 0;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    /* 포지션 */
+    position: absolute;
+    bottom: 8px;
+}
+
+/* Button Prev, Next */
+.prev, .next {
+    padding: 16px;
+    color: #1e4e9a;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #f9fbe7;
+    opacity: 0.4;
+    /* 포지션 */
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+    transform: translateY(-50%);
+}
+.prev {
+    left: 0;
+}
+.next {
+    right: 0;
+}
+.prev:hover, .next:hover {
+    background-color: #f0f4c3;
+    opacity: 0.8;
+}
+
+/* Aside Dot Dot Dot */
+.circle {
+    margin: 8px 0;
+    text-align: center;
+}
+.circle .dot {
+    width: 14px;
+    height: 14px;
+    margin: 0 2px;
+    background-color: #ccc;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.6s;
+}
+.circle .dot:hover {
+    background-color: #333;
+}
+
+/* Contents */
+section {
+    width: 100%;
+    height: 320px;
+    line-height: 320px;
+    /* 그라디언트 */
+    background: linear-gradient(#dce775, #d1c4e9);
+}
+
+section h2 {
+    color: #fce2d5;
+    font-size: 4rem;
+}
+
+/* Footer */
+footer {
+    padding: 16px;
+}
+
+footer p {
+    font-size: 0.75rem;
+}
